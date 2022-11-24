@@ -4,7 +4,7 @@ import { devices } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
   testDir: './tests',
-  reporter:'allure-playwright',
+  reporter:[['allure-playwright',{outputFolder:'test-results'}],['line']],
   /* Maximum time one test can run for. */
   timeout: 100 * 1000,
    expect: {

@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Nov 24 15:11:21 IST 2022","Thu Nov 24 15:12:31 IST 2022","70105","chromium","example.spec.ts","","","","test",""

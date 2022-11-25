@@ -12,15 +12,15 @@ test('test', async ({ page }) => {
   await page.getByLabel('Password').fill('Passpass1');
   await page.getByRole('button', { name: 'Log In' }).click();
   await page.waitForTimeout(2000);
-  const { data } = await psi('https://theverge.com');
+  const { data } = await psi('https://my-qastg.mheducation.com/login');
   console.log('Speed score:', data.lighthouseResult.categories.performance.score);
 
   // Output a formatted report to the terminal
-  await psi.output('https://theverge.com');
+  await psi.output('https://my-qastg.mheducation.com/login');
   console.log('Done');
 
   // Supply options to PSI and get back speed
-  const data2 = await psi('https://theverge.com', {
+  const data2 = await psi('https://my-qastg.mheducation.com/login', {
     nokey: 'true',
     strategy: 'desktop'
   });

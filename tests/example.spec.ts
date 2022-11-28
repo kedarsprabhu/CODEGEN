@@ -12,7 +12,8 @@ test('test', async ({ page }) => {
   await page.getByLabel('Password').fill('Passpass1');
   await page.getByRole('button', { name: 'Log In' }).click();
   await page.waitForTimeout(2000);
-  const { data } = await psi("https://my-qastg.mheducation.com/login");
+  
+  const { data } = await psi('https://my-qastg.mheducation.com/login');
   console.log('Speed score:', data.lighthouseResult.categories.performance.score);
 
   // Output a formatted report to the terminal

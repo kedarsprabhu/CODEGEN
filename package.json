@@ -13,6 +13,7 @@
     "allure-playwright": "^2.0.0-beta.20"
   },
   "dependencies": {
+    "lighthouse": "^9.6.8",
     "psi": "^0.1.6"
   }
 }
